@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import {
   ChevronLeft,
   ChevronRight,
@@ -1211,6 +1212,7 @@ export default function App() {
           </div>
         </div>
       )}
+      <Analytics />
     </div>
   );
 }
