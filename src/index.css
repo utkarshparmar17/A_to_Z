@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: radial-gradient(circle at 50% 45%, #fbf6ef 0%, #efe3d2 65%, #e2d1ba 100%);
+    overflow-x: hidden;
+    touch-action: pan-y;
+    user-select: none;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Lined Diary Paper Texture */
+.diary-lined-paper {
+  background-color: #fdfaf4;
+  background-image:
+    linear-gradient(90deg, transparent 38px, rgba(225, 138, 138, 0.35) 38px, rgba(225, 138, 138, 0.35) 40px, transparent 40px),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 29px,
+      rgba(148, 163, 184, 0.24) 30px
+    );
+  background-size: 100% 30px;
+}
+
+/* Subtle Leather Cover Texture */
+.leather-cover {
+  background-color: #5b1824;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0),
+    radial-gradient(rgba(0, 0, 0, 0.16) 1px, transparent 0),
+    linear-gradient(135deg, #6d1f2d 0%, #4b121c 55%, #380b13 100%);
+  background-size: 14px 14px, 19px 19px, 100% 100%;
+  background-position: 0 0, 7px 7px, 0 0;
+}
+
+/* 3D Flip Book Utilities */
+.book-stage {
+  perspective: 2400px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(-180deg);
+}
+
+/* Custom Scrollbar for Index Modal */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5ede1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c8b298;
+  border-radius: 9999px;
+}
